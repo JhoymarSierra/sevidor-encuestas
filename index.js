@@ -18,7 +18,7 @@ const db = new Pool({
 // ────────────────────────────────────────────────────────────
 db.connect()
   .then(() => console.log('Base de datos conectada ✓'))
-  .catch(err => console.error('Error conectando BD:', err.message));
+  .catch(err => console.error('Error conectando BD:', err));
 // Prueba de conexión con la BD
 app.get('/ping', async (req, res) => {
   try {
